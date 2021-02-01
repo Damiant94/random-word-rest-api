@@ -15,4 +15,4 @@ app.use(express.json())
 const wordRouter = require('./routes/word')
 app.use('/word', wordRouter)
 
-app.listen(3000, () => console.log('Server Started'))
+app.listen(process.env.PORT || 3000, () => console.log('Server Started'))
