@@ -7,9 +7,9 @@ const Word = require('../models/word');
 
 router.get('/word', async (req, res) => {
     try {
-        if (req.query.firstLetter) {
+        if (req.query.startsWith) {
             const words = await Word.find({
-                word: new RegExp('^' + req.query.firstLetter, 'i')
+                word: new RegExp('^' + req.query.startsWith, 'i')
             });
             if (words.length > 0) {
                 const randomIndex = Math.floor(Math.random() * words.length);
@@ -39,6 +39,8 @@ router.get('/words', async (req, res) => {
                 return wordObject.word;
             });
             res.json(wordsMapped);
+        } else if (!req.query.number){
+            res.json({ message: "query number not given" });
         } else {
             res.json({ message: "query number too high" });
         }
