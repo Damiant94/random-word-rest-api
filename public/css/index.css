@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #222;
+  font-family: 'Lato', sans-serif;
+  color: #ddd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .header {
+  background-color: #111;
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.container .header .welcome {
+  font-size: 3rem;
+}
+
+.container .endpoints-wrapper {
+  min-height: calc(100vh - 250px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .endpoints-wrapper .endpoints {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 30px;
+  background-color: #111;
+  padding: 2rem;
+  height: 350px;
+  width: 100%;
+}
+
+.container .endpoints-wrapper .endpoints .endpoint {
+  font-size: 2rem;
+}
+
+.container .endpoints-wrapper .endpoints .endpoint .string,
+.container .endpoints-wrapper .endpoints .endpoint .number {
+  color: red;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+
+.container .endpoints-wrapper .endpoints .endpoint .link > a {
+  text-decoration: none;
+  color: #888;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  font-size: 1.5rem;
+}
+
+.container .endpoints-wrapper .endpoints .endpoint .link > a:hover {
+  color: #ddd;
+}
+
+.container .endpoints-wrapper .endpoints .endpoint .link > a:hover span {
+  color: lightcoral;
+}
+
+.container .word-endpoint .random-word {
+  margin-bottom: 2rem;
+}
+
+.container .footer {
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  background-color: #111;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .footer .github a {
+  text-decoration: none;
+  color: #ddd;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  font-size: 2rem;
+}
+
+.container .footer .github a:hover {
+  color: #fff;
+}
+
+@media (max-height: 600px) {
+  .container .footer {
+    display: none;
+  }
+}
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+    font-family: 'Lato', sans-serif;
+    color: #ddd;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+
+}
+
+
+.container {
+    // width: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .header {
+        background-color: #111;
+        padding: 2rem;
+        width: 100%;
+        text-align: center;
+    
+        .welcome {
+            font-size: 3rem;
+        }
+
+    }
+
+    .endpoints-wrapper {
+        min-height: calc(100vh - 250px);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        .endpoints {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 30px;
+            background-color: #111;
+            padding: 2rem;
+            height: 350px;
+            width: 100%;
+    
+    
+            .endpoint {
+                font-size: 2rem;
+        
+                .string,
+                .number {
+                    color: red;
+                    transition: color 0.2s ease-in-out;
+                }
+        
+                .link {
+                    > a {
+                        text-decoration: none;
+                        color: #888;
+                        transition: color 0.2s ease-in-out;
+                        font-size: 1.5rem;
+        
+                        &:hover {
+                            color: #ddd;
+                        }
+        
+                        &:hover span {
+                            color: lightcoral;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    .word-endpoint {
+        .random-word {
+            margin-bottom: 2rem;
+        }
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        height: 100px;
+        background-color: #111;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .github {
+            a {
+                text-decoration: none;
+                color: #ddd;
+                transition: color 0.2s ease-in-out;
+                font-size: 2rem;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-height: 600px) {
+    .container {
+        .footer {
+            display: none;
+        }
+    }
+}
