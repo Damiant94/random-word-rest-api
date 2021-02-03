@@ -1,7 +1,7 @@
 # Random Word REST API
 REST API, which provides random english word/words.\
 I have created this for the purpose of my other project [The Hangman Game](https://github.com/Damiant94/The-Hangman-Game)\
-List contains 58109 english words.
+Database contains 58109 english words.
 
 # Endpoints
 Get 1 random word:\
