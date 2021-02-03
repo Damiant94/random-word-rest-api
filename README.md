@@ -7,6 +7,6 @@ List contains 58109 english words.
 ExpressJS, MongoDB
 
 # Preview
-[https://random-word-rest-api.herokuapp.com](https://random-word-rest-api.herokuapp.com)
+[random-word-rest-api.herokuapp.com](https://random-word-rest-api.herokuapp.com)
 
 It's free, you can use it if you want.
