@@ -4,7 +4,9 @@ const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
 
-mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true, useUnifiedTopology: true })
+
+const database_url = `mongodb+srv://${process.env.USERNAME}:${process.env.PASSWORD}@cluster0.haa8v.mongodb.net/words?retryWrites=true&w=majority`
+mongoose.connect(database_url, { useNewUrlParser: true, useUnifiedTopology: true })
 
 const db = mongoose.connection
 db.on('error', (error) => console.error(error))
