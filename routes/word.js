@@ -1,16 +1,25 @@
 const express = require('express');
 const router = express.Router();
 const Word = require('../models/word');
-const cors = require('cors')
-router.use(cors())
+const cors = require('cors');
+router.use(cors());
 
-router.get('/', async (req, res) => {
+router.get('/word', async (req, res) => {
     try {
         const word = await Word.aggregate([{$sample: {size: 1}}]);
-        res.json(word[0].word)
+        res.json(word[0].word);
     } catch (err) {
-        res.status(500).json({ message: err.message })
+        res.status(500).json({ message: err.message });
     }
 });
 
-module.exports = router
+// router.get('/', async (req, res) => {
+//     try {
+//         const word = await Word.aggregate([{$sample: {size: 1}}]);
+//         res.json(word[0].word);
+//     } catch (err) {
+//         res.status(500).json({ message: err.message });
+//     }
+// });
+
+module.exports = router;
