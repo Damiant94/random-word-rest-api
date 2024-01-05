@@ -17,6 +17,4 @@ Get requested number of random words:\
 ExpressJS, MongoDB
 
 # Preview
-[random-word-rest-api.herokuapp.com](https://random-word-rest-api.herokuapp.com)
-
-It's free, you can use it if you want.
+Not available
