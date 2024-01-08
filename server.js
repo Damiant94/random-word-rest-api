@@ -23,3 +23,5 @@ app.use('/word', wordRouter);
 app.use('/words', wordsRouter);
 
 app.listen(process.env.PORT || 3000, () => console.log('Server Started'));
+
+module.exports = app;
