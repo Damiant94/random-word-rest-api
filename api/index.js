@@ -1,12 +1,3 @@
-const express = require('express');
-const router = express.Router();
+import router from '..src/routes/index';
 
-router.get('/', async (req, res) => {
-    try {
-        res.render('../pages/index.ejs');
-    } catch (err) {
-        res.status(500).json({ message: err.message });
-    }
-});
-
-module.exports = router;
+export default router;
