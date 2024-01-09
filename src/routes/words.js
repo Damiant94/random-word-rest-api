@@ -3,7 +3,7 @@ const cors = require('cors');
 const router = express.Router();
 router.use(cors());
 
-const Word = require('../models/word');
+const Word = require('../../models/word');
 
 router.get('/', async (req, res) => {
     try {

@@ -1,25 +1,38 @@
 {
-  "name": "randomwordapi",
-  "version": "1.0.0",
-  "description": "",
+  "name": "random-word-rest-api",
+  "version": "2.0.0",
+  "description": "REST API providing random word",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon server.js",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "lint": "eslint --fix src",
+    "test": "jest",
     "vercel-build": "echo hello"
   },
-  "author": "",
-  "license": "ISC",
+  "keywords": [],
+  "author": "Damian Tułacz",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Damiant94/random-word-rest-api.git"
+  },
+  "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
-    "ejs": "^3.1.5",
-    "express": "^4.17.1",
-    "mongoose": "^5.11.13"
-  },
-  "engines": {
-    "node": ">=14.15.3"
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "mongoose": "^5.11.13",
+    "ejs": "^3.1.5"
   },
   "devDependencies": {
-    "dotenv": "^8.2.0",
-    "nodemon": "^2.0.7"
+    "eslint": "^8.54.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.0.1",
+    "supertest": "^6.3.3",
+    "dotenv": "^8.2.0"
   }
 }
